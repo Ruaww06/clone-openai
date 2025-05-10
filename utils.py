@@ -12,6 +12,6 @@ def get_chat_response(prompt, memory, openai_api_key):
     response = chain.invoke({"input": prompt})
     return response["response"]
 
-memory = ConversationBufferMemory(return_messages=True)
+# memory = ConversationBufferMemory(return_messages=True)
 # print(get_chat_response("牛顿提出过那些知名的定律？", memory, os.getenv("OPENAI_API_KEY")))
 # print(get_chat_response("我上一个问题是什么？", memory, os.getenv("OPENAI_API_KEY")))
